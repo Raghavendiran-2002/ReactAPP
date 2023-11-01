@@ -1,0 +1,23 @@
+.sensor{
+    text-align: center;
+    width:30%;
+    padding: 30px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+button{
+    padding: 6px 15px;
+    border-radius: 11px;
+    background-color: white;
+}
+.flexing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.details{
+    border: 1px solid black;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+}
