@@ -31,6 +31,10 @@ const Sensor = mongoose.model("Sensor", sensor);
 
 const server = http.createServer((req, res) => {
   cors()(req, res, () => {
+    if (req.method === "GET" && req.url === "/") {
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ message: "Working🎉" }));
+    }
     if (req.method === "GET" && req.url === "/details") {
       const fetchD = async () => {
         try {
